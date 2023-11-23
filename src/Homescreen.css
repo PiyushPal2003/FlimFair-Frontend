@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main{
+    position: relative;
+}
+.banner{
+    top: 0;
+    width: 100%;
+    height: 55rem;
+    position: relative;
+}
+.banner-text{
+    position:absolute;
+    bottom:0;
+    color: white;
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+.fade{
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    width: 100%;
+    z-index: 0;
+    background-image: linear-gradient(180deg,transparent, rgba(37,37,37,0.61), #111);
+} */

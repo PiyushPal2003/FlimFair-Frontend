@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: local('Tangerine'), url('../public/assets/OverlockSC-Regular.ttf');
+}
+.signup-content{
+    background-color: #00000066;
+    height: 100vh;
+}
+.signup-navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #00000066;
+    box-shadow: 0 0 4rem 25rem #00000066;
+}
+.signup-title{
+    cursor: pointer;
+    font-size: 5.2rem;
+    background: rgb(10,57,240);
+    background: linear-gradient(122deg, rgba(10,57,240,0.7904411764705882) 0%, rgba(231,22,22,0.8436624649859944) 50%, rgba(150,252,69,0.8800770308123249) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Tangerine';
+}
+.signin-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    height: 0rem;
+    padding: 1.5rem 2.3rem 3.5rem 2.3rem;
+    margin: 2.3rem 2.3em 0.3rem 0.3rem;
+    cursor: pointer;
+}
+.signup-banner{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+.signup-text{
+    color: white;
+    font-size: 3rem;
+    margin-top: 3rem;
+    border: none;
+    background: #0000009e;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+.get-started-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: red;
+    border: none;
+    color: white; 
+    border-radius: 0.7rem;
+    margin-left: 1rem;
+    padding: 1.1rem;
+}
+.signup-banner1{
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 2.5rem 0 2.5rem 0;
+}
+.signup-banner2{    
+    margin: 2.5rem 0 1.8rem 0;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.signup-banner3{
+    margin: 0 0 1.5rem 0;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+.inp{
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+}
+.already-a-user{
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 1.5rem 0 0 0;
+    color: #d1a0a0;
+}
+@media(max-width:500px) { 
+    .signup-banner{
+        max-height: 100vh;
+        max-width: 100vw;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 8rem;
+    }
+    .signup-title{
+        font-size: 10rem;
+    }
+    .signin-btn{
+        font-size: 4rem;
+        padding: 2rem 3rem 6.4rem 3rem;
+        margin: 2.3rem 2.3rem 0rem 0rem;
+    }
+    .signup-content{
+        height: 89vh;
+    }
+
+    .signup-banner1{
+        font-family: 'Tangerine';
+        font-size: 4.5rem;
+    }
+    .signup-banner2{
+        font-family: 'Tangerine';
+        font-size: 3.8rem;
+    }
+    .signup-banner3{
+        font-family: 'Tangerine';
+        font-size: 3rem;
+    }
+    .inp{
+        margin: 5rem 0 0 0;
+    }
+    .already-a-user{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+} 

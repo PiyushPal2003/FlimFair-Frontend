@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: local('Tangerine'), url('../public/assets/OverlockSC-Regular.ttf');
+}
+.login-content{
+    background-color: #00000066;
+    height: 100vh;
+}
+.sign-navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #00000066;
+    box-shadow: 0 0 4rem 25rem #00000066;
+}
+.login-title{
+    cursor: pointer;
+    font-size: 5.2rem;
+    background: rgb(10,57,240);
+    background: linear-gradient(122deg, rgba(10,57,240,0.7904411764705882) 0%, rgba(231,22,22,0.8436624649859944) 50%, rgba(150,252,69,0.8800770308123249) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Tangerine';
+}
+/* .inp{
+    width: 46rem;
+    background-color: #0000007a;
+    padding: 4rem;
+    font-family:sans-serif;
+} */
+.inp-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #0000007a;
+    padding: 4rem 6rem;
+    border-radius: 2.5rem;
+}
+.inp-box1{
+    display: flex;
+    flex-direction: column;
+    background-color: #0000007a;
+    padding: 4rem 8rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    max-width: 100vw;
+}
+.inp-title{
+    padding: 2rem 0 1rem 0;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Tangerine';
+}
+.inp-text{
+    padding: 1rem;
+    font-size: 2.4rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: #683a3a;
+    color: white;
+}
+.inp-submit{
+    cursor: pointer;
+    padding: 0.8rem;
+    font-size: 2.4rem;
+    margin: 2.2rem 1rem 1rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: red;
+    color: white;
+}
+.inp-form{
+    display: flex;
+    justify-content: center;
+}
+.signin-btm1{
+    color: #d1a0a0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 0 13rem;
+    background-color: #0000007a;
+}
+.signin-btm2{
+    margin: 0 0 3rem 0;
+    font-size: 1.5rem;
+    color: #d1a0a0;
+    font-weight: 500;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: #0000007a;
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+.signin-inp{
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    flex-direction: column;
+    
+}
+
+@media(max-width:500px) { 
+    .a{
+        display: block; }
+
+    .b{
+        width: 100vw;
+        height: 100vh; }
+
+    .sign-navbar{
+        background-color: #000000b2;
+        justify-content: center;
+    }
+
+    .inp{
+        max-width: 100vw;
+    }
+    .inp-title{
+        font-size: 7rem;
+    }
+    .inp-text{
+        padding: 2.2rem;
+        font-size: 4.2rem;
+        margin: 1rem 1rem 3rem 1rem;
+    }
+    .inp-submit{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+    .login-title{
+        font-size: 11rem;
+    }
+    .signin-btm1{
+        font-size: 2.8rem;
+        background-color: #00000000;
+    }
+    .signin-btm2{
+        font-size: 2.2rem;
+        background-color: #00000000;
+    }
+    .login-content{
+        height: 89vh;
+    }
+    .signin-inp{
+        background-color: #0000007a;
+    }
+    .inp-box1{
+        background-color: #00000000;
+    }
+}

@@ -1,0 +1,150 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: local('Tangerine'), url('../public/assets/OverlockSC-Regular.ttf');
+}
+.ytvid{
+    width: 92rem;
+    height: 46rem;
+    border-radius: 1.2rem;
+    margin-top: 3rem;
+}
+.movie-details{
+    color: white;
+}
+.detail-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-header{
+    display: flex;
+    margin: 2.7rem 0 0 0;
+    width: 75%;
+    position: absolute;
+    top: 6rem;
+}
+.detail-header-txt{
+    margin: 0.6rem 0 0 5rem;
+    font-family: 'Tangerine';
+}
+.abcd{
+    position: relative;
+}
+.det-text{
+    font-family: 'Tangerine';
+}
+
+.det-banner{
+    object-fit: contain;
+    height: 58rem;
+    z-index: 0;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    position: relative;
+}
+.usreview{
+    display: block;
+    border: none;
+    border-radius: 0.4rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    width: 36rem;
+    height: 8rem;
+    font-family: sans-serif;
+    margin: 0.8rem 0;
+}
+.review-submit{
+    border: none;
+    border-radius: 0.4rem;
+    background: red;
+    color: white;
+    font-size: 2.4rem;
+    cursor: pointer;
+    font-family: 'Tangerine';
+    padding: 0.5rem 1.6rem;
+    margin: 0 0 3rem 0;
+}
+.review-submit:active{
+    background-color: rgb(168, 6, 6);
+}
+.review{
+    margin: 3rem 1rem;
+    font-family: 'Tangerine';
+    background-color: #3d1212;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.wishlist{
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background: #ffffff2b;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.wishlist:active{
+    background-color: #ffffff4f;
+}
+.movdet-verposter{
+    width: 34rem;
+    height: 47rem;
+    border-radius: 1rem;
+}
+.flimfair-users{
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    width: 100vw;
+    text-align: center;
+}
+
+@media(max-width: 500px){
+    .ytvid{
+        width: 100vw;
+        height: 48rem;
+    }
+    .detail-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .det-banner{
+        height: 92rem;
+    }
+    .detail-header-txt{
+        margin: 0.6rem 0 0 0rem;
+    }
+    .movdet-verposter{
+        width: 35rem;
+        height: 49rem;
+    }
+    .wishlist{
+        font-size: 2.8rem;
+        margin: 1rem 0 0 0;
+    }
+    .flimfair-users{
+        font-size: 3.4rem;
+    }
+    .usreview{
+        font-size: 2.5rem;
+        width: 37rem;
+    }
+    .review-submit{
+        font-size: 3.6rem;
+        padding: 1rem 2rem;
+        margin: 3rem 0 3rem 0;
+    }
+    .trailer{
+        margin-top: 7rem;
+    }
+}

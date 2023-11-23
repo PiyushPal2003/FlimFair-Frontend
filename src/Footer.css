@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+@font-face {
+        font-family: 'Tangerine';
+        src: local('Tangerine'), url('../public/assets/OverlockSC-Regular.ttf');
+}
+.footer-main{
+    margin: 3rem 1rem;
+    padding: 1rem 2rem;
+    font-family: 'Tangerine';
+    background-color: #242021;
+    border-radius: 2rem;
+    color: white;
+    position:relative;
+    bottom: 0;
+}
+.footer-head{
+    display: flex;
+}
+.title2{
+    cursor: pointer;
+    font-size: 5.2rem;
+    background: rgb(10,57,240);
+    background: linear-gradient(122deg, rgba(10,57,240,0.7904411764705882) 0%, rgba(231,22,22,0.8436624649859944) 50%, rgba(150,252,69,0.8800770308123249) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Tangerine';
+}
+.footer-content{
+    margin: 1rem 0
+}
+
+.fa {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.4rem 0.2rem;
+    border-radius: 2rem;
+}
+.fa:hover {
+opacity: 0.7;
+}
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+.gif{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-img{
+    height: 20rem;
+}
+
+@media(max-width:500px) {
+    .foot-img{
+        margin-top: 4rem;
+        height: 16rem;
+        width: 32rem;
+    }
+    .fa {
+        padding: 2rem;
+        font-size: 3.2rem;
+        width: 7.2rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 0.5rem 0.5rem 0 0;
+        border-radius: 3.5rem;
+    }
+    .title2{
+        font-size: 6.7rem;
+    }
+    .myname{
+        font-size: 2.5rem;
+    }
+    .footer-content{
+        font-size: 1.3rem;
+    }
+
+}
