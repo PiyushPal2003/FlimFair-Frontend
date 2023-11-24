@@ -39,13 +39,16 @@ export default function Wishlist() {
             console.log(dt);
           setData(dt);
           wish_array=dt.Wishlist;
-          wishes();
+    
           
         })
     }
 
     useEffect(()=>{
         wish();
+        setTimeout(() => {
+            wishes();
+        }, 1000);
       }, [])
 
       const defaultOptions = {
