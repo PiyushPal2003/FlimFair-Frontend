@@ -34,8 +34,11 @@ export default function Login({info, setInfo}) {
         
         fetch("https://filmfair-server.vercel.app/SignIn", {
           method: "POST",
-          headers:{"Content-Type": "application/json"},
           body: JSON.stringify(user),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          mode: 'no-cors',
 
         } )
         .then((res)=>res.json())
