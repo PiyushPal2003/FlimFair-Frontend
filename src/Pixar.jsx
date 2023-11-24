@@ -13,7 +13,7 @@ export default function Pixar() {
   })
 
   function fetchdata(){
-      fetch("https://filmfair-server.vercel.app/pixar")
+      fetch("https://filmfare-server.vercel.app/pixar")
       .then((res)=>res.json())
       .then((dt)=> {
           console.log(dt);

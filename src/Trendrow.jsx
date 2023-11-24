@@ -10,7 +10,7 @@ export default function Trendrow(){
     const [data, setData] = useState([]);
 
     function fetchdata(){
-        fetch("https://filmfair-server.vercel.app/movierow")
+        fetch("https://filmfare-server.vercel.app/movierow")
         .then((res)=>res.json())
         .then((dt)=> {
             console.log(dt);

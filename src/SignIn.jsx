@@ -32,14 +32,13 @@ export default function Login({info, setInfo}) {
         e.preventDefault();
         console.log("submit button clicked")
         
-        fetch("https://filmfair-server.vercel.app/SignIn", {
+        fetch("https://filmfare-server.vercel.app/SignIn", {
           method: "POST",
           body: JSON.stringify(user),
           headers: {
             'Content-Type': 'application/json',
           },
-          mode: 'no-cors',
-
+          
         } )
         .then((res)=>res.json())
         .then((data)=>{

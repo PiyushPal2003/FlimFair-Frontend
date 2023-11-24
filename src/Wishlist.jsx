@@ -15,7 +15,7 @@ export default function Wishlist() {
     const usercontext = useContext(UserContext);
 
     function wishes(){
-        fetch('https://filmfair-server.vercel.app/wishes',{
+        fetch('https://filmfare-server.vercel.app/wishes',{
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({wish_array})
@@ -29,7 +29,7 @@ export default function Wishlist() {
 
     function wish(){
         let urid = usercontext.user;
-        fetch('https://filmfair-server.vercel.app/SignIn', {
+        fetch('https://filmfare-server.vercel.app/SignIn', {
           method: "POST",
           headers: {"Content-Type":"application/json"},
           body: JSON.stringify({urid:urid})

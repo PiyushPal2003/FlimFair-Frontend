@@ -23,7 +23,7 @@ export default function Moviedetail() {
   let {id} = useParams();
 
   function fetchdata(){
-    fetch("https://filmfair-server.vercel.app/details", {
+    fetch("https://filmfare-server.vercel.app/details", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({id})
@@ -37,7 +37,7 @@ export default function Moviedetail() {
   }
 
   function reviewrating() {
-    fetch("https://filmfair-server.vercel.app/review", {
+    fetch("https://filmfare-server.vercel.app/review", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({id})
@@ -62,7 +62,7 @@ export default function Moviedetail() {
   function updatereviewrating(e){
     e.preventDefault();
     let usr = usercontext.user;
-    fetch("https://filmfair-server.vercel.app/updatereviewrating", {
+    fetch("https://filmfare-server.vercel.app/updatereviewrating", {
       method: "PATCH",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({id, usrreview, usrrating, usr})
@@ -94,7 +94,7 @@ export default function Moviedetail() {
 
   function wishlist(){
       let usr = usercontext.user;
-      fetch("https://filmfair-server.vercel.app/wishlist", {
+      fetch("https://filmfare-server.vercel.app/wishlist", {
         method: "PATCH",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify({id, usr})
@@ -110,7 +110,7 @@ export default function Moviedetail() {
 
   function deleteWishlist(){
     let usr = usercontext.user;
-    fetch("https://filmfair-server.vercel.app/deletewish", {
+    fetch("https://filmfare-server.vercel.app/deletewish", {
       method: "PATCH",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({id, usr})
@@ -126,7 +126,7 @@ export default function Moviedetail() {
 
   function wishliststatus(){
       let usr = usercontext.user;
-      fetch(`https://filmfair-server.vercel.app/wishlistStatus?usr=${usr}`, {
+      fetch(`https://filmfare-server.vercel.app/wishlistStatus?usr=${usr}`, {
         method: "GET",
         headers: {"Content-Type":"application/json"}
       })

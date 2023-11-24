@@ -13,7 +13,7 @@ export default function ProdHouseDetails() {
   })
 
   function fetchdata(){
-      fetch("https://filmfair-server.vercel.app/starwar")
+      fetch("https://filmfare-server.vercel.app/starwar")
       .then((res)=>res.json())
       .then((dt)=> {
           console.log(dt);

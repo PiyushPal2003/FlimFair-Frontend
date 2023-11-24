@@ -15,7 +15,7 @@ function Profile({info, setInfo}) {
 
   function profile(){
     let urid = usercontext.user;
-    fetch('https://filmfair-server.vercel.app/SignIn', {
+    fetch('https://filmfare-server.vercel.app/SignIn', {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({urid:urid})

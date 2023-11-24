@@ -31,7 +31,7 @@ export default function SignUp({info, setInfo}) {
     e.preventDefault();
     console.log("submit button clicked")
     
-    fetch("https://filmfair-server.vercel.app/user_detail", {
+    fetch("https://filmfare-server.vercel.app/user_detail", {
       method: "POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify(user),

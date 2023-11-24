@@ -13,7 +13,7 @@ function Banner() {
     }
 
     function fetchdata(){
-        fetch("https://filmfair-server.vercel.app/movieinfo")
+        fetch("https://filmfare-server.vercel.app/movieinfo")
         .then((res)=>res.json())
         .then((dt)=>{
             console.log(dt);

@@ -13,7 +13,7 @@ export default function Marvel() {
   })
 
   function fetchdata(){
-      fetch("https://filmfair-server.vercel.app/marvel")
+      fetch("https://filmfare-server.vercel.app/marvel")
       .then((res)=>res.json())
       .then((dt)=> {
           console.log(dt);

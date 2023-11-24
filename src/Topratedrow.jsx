@@ -6,7 +6,7 @@ export default function Topratedrow(){
     const[data, setData] = useState([])
 
     function fetchdata(){
-        fetch("https://filmfair-server.vercel.app/toprated")
+        fetch("https://filmfare-server.vercel.app/toprated")
         .then((res)=>res.json())
         .then((dt)=> {
             console.log(dt);

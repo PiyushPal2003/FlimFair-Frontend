@@ -13,7 +13,7 @@ export default function ProdHouseDetails() {
   })
 
   function fetchdata(){
-      fetch("https://filmfair-server.vercel.app/disney")
+      fetch("https://filmfare-server.vercel.app/disney")
       .then((res)=>res.json())
       .then((dt)=> {
           console.log(dt);

@@ -7,7 +7,7 @@ export default function Actionrow() {
     const[data, setData] = useState([])
 
     function fetchdata(){
-        fetch("https://filmfair-server.vercel.app/actionrow")
+        fetch("https://filmfare-server.vercel.app/actionrow")
         .then((res)=>res.json())
         .then((dt)=> {
             console.log(dt);
