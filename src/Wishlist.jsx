@@ -81,7 +81,7 @@ export default function Wishlist() {
 
                 <div className='wishlist-head'>
                     <div>
-                    <Tilt options={defaultOptions} style={{ height: "14rem", width: "42rem"}}>
+                    <Tilt options={defaultOptions} style={{ height: "14rem", width: "43rem"}}>
                         <div>
                         <h1 className='mydetails'>Hi, {`${data.userName}`}</h1>
                         <h1 className='mydetails1'>Hope you are enjoying your day with FlimFair 🤗</h1>

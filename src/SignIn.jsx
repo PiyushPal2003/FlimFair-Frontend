@@ -66,6 +66,17 @@ export default function Login({info, setInfo}) {
         })
     }
 
+    useEffect(()=>{
+      const script = document.createElement('script')
+      script.src="https://www.google.com/recaptcha/api.js?render=6LcEeyopAAAAAKMbETotjIYVH1twrHf8Po6Kshgo"
+      script.addEventListener('load', ()=>{
+        window.grecaptcha.ready(()=>{
+          window.grecaptcha.execute("6LcEeyopAAAAAKMbETotjIYVH1twrHf8Po6Kshgo")
+        })
+      })
+      document.body.appendChild(script)
+    }, [])
+
     return (
         <div>
             <div style={{backgroundImage: `url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg")`, maxWidth: "100vw", backgroundSize: "cover"}}>
@@ -93,7 +104,11 @@ export default function Login({info, setInfo}) {
                 </div>
 
             </div>
-          
+            <div className='g-recaptcha'
+            data-sitekey="6LcEeyopAAAAAKMbETotjIYVH1twrHf8Po6Kshgo"
+            data-size="invisible"
+            > </div>
+
         </div>
     )
 }
