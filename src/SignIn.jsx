@@ -68,10 +68,10 @@ export default function Login({info, setInfo}) {
 
     useEffect(()=>{
       const script = document.createElement('script')
-      script.src="https://www.google.com/recaptcha/api.js?render=6LcEeyopAAAAAKMbETotjIYVH1twrHf8Po6Kshgo"
+      script.src="https://www.google.com/recaptcha/api.js?render=6LdRylQpAAAAAHUjic3Gwzm3AxEyHAhYUJ3SUFfc"
       script.addEventListener('load', ()=>{
         window.grecaptcha.ready(()=>{
-          window.grecaptcha.execute("6LcEeyopAAAAAKMbETotjIYVH1twrHf8Po6Kshgo")
+          window.grecaptcha.execute("6LdRylQpAAAAAHUjic3Gwzm3AxEyHAhYUJ3SUFfc")
         })
       })
       document.body.appendChild(script)
